@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --fonte-titulo: 'Poppins', sans-serif; 
+    --fonte-texto: 'Merriweather', serif; 
+    --cor1: #ff6f61; 
+    --cor2: #f1faee; 
+    --cor3: #4a4e69; 
+    --cor4: #f8edeb; 
+    --cor5: #ffd60a; 
+}
+
+body {
+    font-family: var(--fonte-texto);
+    background-color: var(--cor2);
+    color: var(--cor3);
+    height: 100vh;
+}
+
+header {
+    background-color: var(--cor1);
+    text-align: center;
+}
+
+h1 {
+    font-family: var(--fonte-titulo);
+    font-size: 2.5rem; 
+    padding: 1.2rem 0;
+    color: var(--cor2);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--cor3);
+    margin: 0 2rem 1rem 0;
+    font-size: 1.5rem;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    transform: scale(1.1); /* Apenas aumenta o tamanho */
+    color: var(--cor3); /* Cor do texto ao passar o mouse */
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor1);
+    color: var(--cor2);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 1rem;
+    font-family: var(--fonte-texto);
+}
