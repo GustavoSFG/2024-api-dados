@@ -4,18 +4,18 @@
 }
 
 :root {
-    --fonte-titulo: 'Poppins', sans-serif; 
-    --fonte-texto: 'Merriweather', serif; 
-    --cor1: #ff6f61; 
-    --cor2: #f1faee; 
-    --cor3: #4a4e69; 
-    --cor4: #f8edeb; 
-    --cor5: #ffd60a; 
+    --fonte-titulo: 'Poppins', sans-serif;
+    --fonte-texto: 'Merriweather', serif;
+    --cor1: #5c6bc0;
+    --cor2: #f5f5f5;
+    --cor3: #274b5b;
+    --cor4: #5bc292;
+    --cor5: #e3f2fd;
 }
 
 body {
     font-family: var(--fonte-texto);
-    background-color: var(--cor2);
+    background-color: var(--cor5);
     color: var(--cor3);
     height: 100vh;
 }
@@ -27,9 +27,13 @@ header {
 
 h1 {
     font-family: var(--fonte-titulo);
-    font-size: 2.5rem; 
-    padding: 1.2rem 0;
+    font-size: 2.5rem;
+    padding: 1.2rem 2rem;
     color: var(--cor2);
+    background-color: var(--cor3);
+    border-radius: 15px; /* Borda arredondada */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para dar destaque */
+    display: inline-block; /* Para o título não ocupar toda a largura */
 }
 
 nav {
@@ -47,8 +51,9 @@ nav a {
 }
 
 nav a:hover {
-    transform: scale(1.1); /* Apenas aumenta o tamanho */
-    color: var(--cor3); /* Cor do texto ao passar o mouse */
+    transform: scale(1.1);
+    color: var(--cor4);
+    transition: 0.5s;
 }
 
 footer {
@@ -62,4 +67,10 @@ footer {
     bottom: 0;
     padding: 1rem;
     font-family: var(--fonte-texto);
+}
+
+canvas {
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
