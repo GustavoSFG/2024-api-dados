@@ -1,5 +1,5 @@
 {
-    "alimentos_bahia": {
+    "alimentos_bahia":
       "Acarajé": 250000,
       "Vatapá": 150000,
       "Caruru": 120000,
@@ -10,5 +10,4 @@
       "Cocada": 40000,
       "Beijinho": 30000,
       "Quindim": 20000
-    }
   }
